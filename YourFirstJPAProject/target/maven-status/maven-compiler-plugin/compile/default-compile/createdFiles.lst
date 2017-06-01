@@ -1,0 +1,4 @@
+model\Student.class
+test\TestStudentByJPA.class
+model\PersistenceManager.class
+model\Address.class
