@@ -40,7 +40,7 @@ public class MovieDAOImpl implements MovieDAO {
 	/* (non-Javadoc)
 	 * @see dao.mysql.MovieDAO#findAllMovies()
 	 */
-	@Override
+	
 	public ArrayList<MovieDTO> findAllMovies() throws MyDataException {
 		try {
 			ArrayList<MovieDTO> result = new ArrayList<MovieDTO>();
@@ -68,7 +68,7 @@ public class MovieDAOImpl implements MovieDAO {
 	/* (non-Javadoc)
 	 * @see dao.mysql.MovieDAO#updateMovie(dto.MovieDTO)
 	 */
-	@Override
+	
 	public int updateMovie(MovieDTO m) throws MyDataException {
 		try {
 			Connection conn = openConnection();
@@ -91,7 +91,7 @@ public class MovieDAOImpl implements MovieDAO {
 		}
 	}
 
-	@Override
+	
 	public int insertMovie(MovieDTO movie) throws MyDataException, SQLException {
 		Connection connection = openConnection();
 		PreparedStatement statement =  connection.prepareStatement(INSERT_QRY);
@@ -103,13 +103,13 @@ public class MovieDAOImpl implements MovieDAO {
 		return r;
 	}
 
-	@Override
+	
 	public int deleteMovie(int id) throws MyDataException {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	@Override
+
 	public MovieDTO findById(int id) throws MyDataException {
 		// TODO Auto-generated method stub
 		return null;
